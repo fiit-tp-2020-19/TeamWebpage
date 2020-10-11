@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Tímový projekt - Tím 19
 
 You can use the [editor on GitHub](https://github.com/fiit-tp-2020-19/fiit-tp-2020-19.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
