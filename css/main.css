@@ -1,0 +1,39 @@
+.jumbotron-fluid {
+  background-color: #5a5bf4;
+  color: #fff;
+  padding: 100px 25px;
+}
+.bg-grey {
+	background-color: #f2f3f7;
+}
+.bg-blue {
+  background-color: #5a5bf4;
+}
+
+.bg-light-grey {
+  background-color: #f9fafe;
+}
+
+.container-fluid-content {
+    padding: 60px 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header-img {
+  padding: 15% 15% 15% 15%;
+  margin: 0px auto;
+}
+
+.logo {
+  font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
+
