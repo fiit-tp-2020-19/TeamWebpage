@@ -1,12 +1,12 @@
 # .github/workflows/ssh_deploy.yml
 
-name: Deploy Eleventy via SSH
+name: Deploy via SSH
 
 on:
   push:
     branches: [master]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
