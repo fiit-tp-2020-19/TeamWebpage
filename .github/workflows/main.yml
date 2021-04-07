@@ -25,4 +25,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           rm: true
           source: "*"
-          target: "/home/devops/team18"
+          target: "/var/www/team18/"
