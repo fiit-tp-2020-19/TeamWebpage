@@ -4,7 +4,7 @@ name: Deploy via SSH
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
     branches: [main]
 
@@ -14,11 +14,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
 
       # Copying files and artifacts via SSH
       - name: Copying files to server
-        uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@main
         with:
           host: ${{ secrets.CONN_NAME }}
           username: ${{ secrets.USERNAME }}
