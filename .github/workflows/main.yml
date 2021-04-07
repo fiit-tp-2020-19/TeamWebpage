@@ -20,7 +20,7 @@ jobs:
       - name: Copying files to server
         uses: nogsantos/scp-deploy@master
         with:
-          src: ./dist/*
+          src: ./*
           host: ${{ secrets.CONN_NAME }}
           remote: '/var/www/team18/'
           port: 22
