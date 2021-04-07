@@ -23,6 +23,6 @@ jobs:
           host: ${{ secrets.CONN_NAME }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          overwrite: true
+          rm: true
           source: "*"
-          target: "/var/www/team18/"
+          target: "/home/devops/team18"
