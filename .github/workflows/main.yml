@@ -1,6 +1,6 @@
 # .github/workflows/ssh_deploy.yml
 
-name: Deploy via SSH
+name: Deploy Team Webpage
 
 on:
   push:
@@ -23,6 +23,6 @@ jobs:
           host: ${{ secrets.CONN_NAME }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          rm: false
+          rm: true
           source: "*"
           target: "/var/www/team18/"
