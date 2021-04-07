@@ -18,11 +18,11 @@ jobs:
 
       # Copying files and artifacts via SSH
       - name: Copying files to server
-        uses: appleboy/scp-action@master
+        uses: nogsantos/scp-deploy@master
         with:
+          src: ./dist/*
           host: ${{ secrets.CONN_NAME }}
-          username: ${{ secrets.USERNAME }}
+          remote: '/var/www/team18/'
+          port: 22
+          user: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          rm: true
-          source: "*"
-          target: "/var/www/team18/"
