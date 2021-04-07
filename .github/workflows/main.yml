@@ -14,7 +14,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, 
       # so your workflow can access it
-      - uses: actions/checkout@main
+      - uses: actions/checkout@master
 
       # Copying files and artifacts via SSH
       - name: Copying files to server
@@ -23,6 +23,6 @@ jobs:
           host: ${{ secrets.CONN_NAME }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          rm: true
+          rm: false
           source: "*"
           target: "/var/www/team18/"
